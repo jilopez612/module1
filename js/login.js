@@ -49,7 +49,19 @@ function sign_in(){
       window.location = "about-t.html";
     }
     else{
-      return false;
+      alert("The Username and the Password does not match try again!");
+      div = document.getElementById('passErr');
+      div.textContent = "Please enter again!";
+      var elem = document.getElementById("pass");
+      elem.classList.add("input-2");
+      elem.classList.remove("input-1");
+
+
+      div = document.getElementById('userErr');
+      div.textContent = "Please enter again!";
+      var elem = document.getElementById("user");
+      elem.classList.add("input-2");
+      elem.classList.remove("input-1");
     }
   }
   else{
