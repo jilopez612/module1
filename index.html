@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Malayan Colleges Mindanao</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet"></link>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<div class="login-wrap">
+		<div class="login-html">
+			<div class="group">
+				<img src="img/logo.png" width=200px class="img">
+				<br>
+			</div>
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+			<div class="login-form">
+				<div class="sign-in-htm">
+					<div class="group"><br>
+						<label for="user" class="label">Username</label>
+						<input id="user" type="text" class="input">
+						<div class="error" id="userErr"></div>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password">
+						<div class="error" id="passErr"></div>
+					</div>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked>
+						<label for="check"><span class="icon"></span> Keep me Signed in</label>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign In" onclick=sign_in()>
+					</div>
+					<div class="group">
+						<input type="reset" class="button2" value="Reset" onclick=reset()>
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<a href="#forgot">Forgot Password?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

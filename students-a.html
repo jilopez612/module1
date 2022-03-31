@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MCM - Students</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="" class="navbar-brand">
+                <img src="img/logo.png" width=200px class="img">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4 bg-secondary">
+                    <a href="about-a.html" class="nav-item nav-link">Home</a>
+                    <a href="students-a.html" class="nav-item nav-link active">Students</a>
+                    <a href="courses-a.html" class="nav-item nav-link">Courses</a>
+                    <a href="announce-a.html" class="nav-item nav-link">Announcements</a>
+                    <a href="index.html" class="nav-item nav-link">Log-out</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header-1 mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0" style="min-height: 300px">
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">List of Students</h4>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Gym Class Start -->
+    <div class="container gym-class mb-5" style="margin-top: 90px;">
+        <div class="row px-3">
+            <div class="col-md-12 p-0">
+                <div class="gym-class-box d-flex flex-column align-items-start justify-content-center wrapper text-left text-white py-5 px-5">
+                  <div class="col-md-12">
+                    <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center;">Surname</th>
+                        <th style="text-align:center;">First Name</th>
+                        <th style="text-align:center;">Middle Name</th>
+                        <th style="text-align:center;">Student ID</th>
+                        <th style="text-align:center;">Program</th>
+                        <th style="text-align:center;">Year Level</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="addRow">
+                        <td class="col-xs-3">
+                          <input class="form-control addMain" type="text" placeholder="Enter SN" />
+                        </td>
+
+                        <td class="col-xs-3">
+                          <input class="form-control addPrefer" type="text" placeholder="Enter FN" />
+                        </td>
+                        <td class="col-xs-5">
+                          <input class="form-control addCommon" type="text" placeholder="Enter MN" />
+                        </td>
+                        <td class="col-xs-5">
+                          <input class="form-control addMain2" type="text" placeholder="Enter ID #" />
+                        </td>
+                        <td class="col-xs-5">
+                          <input class="form-control addPrefer2" type="text" placeholder="Enter Prgm." />
+                        </td>
+                        <td class="col-xs-5">
+                          <input class="form-control addCommon2" type="text" placeholder="Enter Year" />
+                        </td>
+                        <td class="col-xs-1 text-center">
+                          <span class="addBtn">
+                            <i class="fa fa-plus"></i>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-xs-3"><input type="text" value="Lopez" class="form-control editable" style="text-align:center;"/>  </td>
+
+                        <td class="col-xs-3"><input type="text" value="Josiah Izaak" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="De Vera" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="2019145121" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="BS-CpE" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="3" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa fa-trash-o" aria-hidden="true"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="col-xs-3"><input type="text" value="Sarong" class="form-control editable"  style="text-align:center;"/>  </td>
+
+                        <td class="col-xs-3"><input type="text" value="Jonathan Kim" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="Santos" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="2019123021" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="BS-CpE" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="3" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa fa-trash-o" aria-hidden="true"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="col-xs-3"><input type="text" value="Maddara" class="form-control editable"  style="text-align:center;"/>  </td>
+
+                        <td class="col-xs-3"><input type="text" value="Marlon" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="Villarosa" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="2019122907" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="BS-CpE" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="3" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa fa-trash-o" aria-hidden="true"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="col-xs-3"><input type="text" value="Kristine" class="form-control editable"  style="text-align:center;"/>  </td>
+
+                        <td class="col-xs-3"><input type="text" value="Te" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="Seno" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="2019123020" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="BS-CpE" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-5"><input type="text" value="3" class="form-control editable"  style="text-align:center;"/>  </td>
+                        <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa fa-trash-o" aria-hidden="true"></a></td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-1 pull-right" style="position:block; margin-left:90%;">
+                    <button class="btn btn-primary pull-right">Save</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gym Class End -->
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+      <div class="row pt-5">
+        <div class="container border-top border-dark pt-5">
+            <p class="m-0 text-center text-white">
+                &copy; <a class="text-white font-weight-bold" href="#">Student Information System - MCM</a>. All Rights Reserved.
+            </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
